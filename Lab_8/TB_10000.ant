@@ -1,0 +1,172 @@
+--------------------------------------------------------------------------------
+-- Copyright (c) 1995-2007 Xilinx, Inc.
+-- All Right Reserved.
+--------------------------------------------------------------------------------
+--   ____  ____ 
+--  /   /\/   / 
+-- /___/  \  /    Vendor: Xilinx 
+-- \   \   \/     Version : 9.2.04i
+--  \   \         Application : ISE
+--  /   /         Filename : TB_10000.ant
+-- /___/   /\     Timestamp : Mon Mar 25 20:37:48 2019
+-- \   \  /  \ 
+--  \___\/\___\ 
+--
+--Command: 
+--Design Name: TB_10000
+--Device: Xilinx
+--
+
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_TEXTIO.ALL;
+USE IEEE.STD_LOGIC_1164.All;
+USE IEEE.STD_LOGIC_ARITH.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+USE STD.TEXTIO.ALL;
+
+ENTITY TB_10000 IS
+END TB_10000;
+
+ARCHITECTURE testbench_arch OF TB_10000 IS
+    FILE RESULTS: TEXT OPEN WRITE_MODE IS "C:\Users\carlo\Desktop\xilinx\Lab_8\TB_10000.ano";
+
+    COMPONENT Lab_8_crazy_counter_mealy_machine
+        PORT (
+            A : In STD_LOGIC;
+            CLK : In STD_LOGIC;
+            S0N : Out STD_LOGIC;
+            S1N : Out STD_LOGIC;
+            S2N : Out STD_LOGIC
+        );
+    END COMPONENT;
+
+    SIGNAL A : STD_LOGIC := '0';
+    SIGNAL CLK : STD_LOGIC := '0';
+    SIGNAL S0N : STD_LOGIC := '0';
+    SIGNAL S1N : STD_LOGIC := '0';
+    SIGNAL S2N : STD_LOGIC := '0';
+
+    SHARED VARIABLE TX_ERROR : INTEGER := 0;
+    SHARED VARIABLE TX_OUT : LINE;
+
+    constant PERIOD : time := 350 ns;
+    constant DUTY_CYCLE : real := 0.5714285714;
+    constant OFFSET : time := 100 ns;
+
+    BEGIN
+        UUT : Lab_8_crazy_counter_mealy_machine
+        PORT MAP (
+            A => A,
+            CLK => CLK,
+            S0N => S0N,
+            S1N => S1N,
+            S2N => S2N
+        );
+
+        PROCESS    -- clock process for CLK
+        BEGIN
+            WAIT for OFFSET;
+            CLOCK_LOOP : LOOP
+                CLK <= '0';
+                WAIT FOR (PERIOD - (PERIOD * DUTY_CYCLE));
+                CLK <= '1';
+                WAIT FOR (PERIOD * DUTY_CYCLE);
+            END LOOP CLOCK_LOOP;
+        END PROCESS;
+
+        PROCESS    -- Annotation process for CLK
+            VARIABLE TX_TIME : INTEGER := 0;
+
+            PROCEDURE ANNOTATE_S0N(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", S0N, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, S0N);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+            PROCEDURE ANNOTATE_S1N(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", S1N, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, S1N);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+            PROCEDURE ANNOTATE_S2N(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", S2N, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, S2N);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+        BEGIN
+            WAIT for 1 fs;
+            ANNOTATE_S0N(0);
+            ANNOTATE_S1N(0);
+            ANNOTATE_S2N(0);
+            WAIT for OFFSET;
+            TX_TIME := TX_TIME + 100;
+            ANNO_LOOP : LOOP
+                --Rising Edge
+                WAIT for 200 ns;
+                TX_TIME := TX_TIME + 200;
+                ANNOTATE_S0N(TX_TIME);
+                ANNOTATE_S1N(TX_TIME);
+                ANNOTATE_S2N(TX_TIME);
+                WAIT for 150 ns;
+                TX_TIME := TX_TIME + 150;
+            END LOOP ANNO_LOOP;
+        END PROCESS;
+
+        PROCESS
+            BEGIN
+                -- -------------  Current Time:  900ns
+                WAIT FOR 900 ns;
+                A <= '1';
+                -- -------------------------------------
+                -- -------------  Current Time:  2300ns
+                WAIT FOR 1400 ns;
+                A <= '0';
+                -- -------------------------------------
+                -- -------------  Current Time:  3700ns
+                WAIT FOR 1400 ns;
+                A <= '1';
+                -- -------------------------------------
+                -- -------------  Current Time:  6150ns
+                WAIT FOR 2450 ns;
+                A <= '0';
+                -- -------------------------------------
+                WAIT FOR 4200 ns;
+
+                STD.TEXTIO.write(TX_OUT, string'("Total[]"));
+                STD.TEXTIO.writeline(RESULTS, TX_OUT);
+                ASSERT (FALSE) REPORT
+                    "Success! Simulation for annotation completed"
+                    SEVERITY FAILURE;
+            END PROCESS;
+
+    END testbench_arch;
+

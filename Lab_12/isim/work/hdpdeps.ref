@@ -1,0 +1,21 @@
+V3 11
+FL C:/Users/carlo/Desktop/xilinx/Lab_12/ALU.vhd 2019/04/16.17:24:33 J.40
+EN work/ALU 1555983157 FL C:/Users/carlo/Desktop/xilinx/Lab_12/ALU.vhd \
+      PB ieee/std_logic_1164 1194562354 PB ieee/std_logic_arith 1194562356 \
+      PB ieee/STD_LOGIC_UNSIGNED 1194562362
+AR work/ALU/Behavioral 1555983158 \
+      FL C:/Users/carlo/Desktop/xilinx/Lab_12/ALU.vhd EN work/ALU 1555983157 \
+      CP MUX2
+FL C:/Users/carlo/Desktop/xilinx/Lab_12/MUX2.vhd 2019/04/16.15:47:01 J.40
+EN work/MUX2 1555983155 FL C:/Users/carlo/Desktop/xilinx/Lab_12/MUX2.vhd \
+      PB ieee/std_logic_1164 1194562354 PB ieee/std_logic_arith 1194562356 \
+      PB ieee/STD_LOGIC_UNSIGNED 1194562362
+AR work/MUX2/Behavioral 1555983156 \
+      FL C:/Users/carlo/Desktop/xilinx/Lab_12/MUX2.vhd EN work/MUX2 1555983155
+FL C:/Users/carlo/Desktop/xilinx/Lab_12/TB.vhw 2019/04/22.18:32:22 J.40
+EN work/TB 1555983159 FL C:/Users/carlo/Desktop/xilinx/Lab_12/TB.vhw \
+      PB ieee/std_logic_1164 1194562354 PB ieee/std_logic_arith 1194562356 \
+      PB ieee/STD_LOGIC_UNSIGNED 1194562362 PB ieee/STD_LOGIC_TEXTIO 1194562364 \
+      PB std/textio 1194562348
+AR work/TB/testbench_arch 1555983160 \
+      FL C:/Users/carlo/Desktop/xilinx/Lab_12/TB.vhw EN work/TB 1555983159 CP ALU

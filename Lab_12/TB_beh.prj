@@ -1,0 +1,3 @@
+vhdl work "MUX2.vhd"
+vhdl work "ALU.vhd"
+vhdl work "TB.vhw"

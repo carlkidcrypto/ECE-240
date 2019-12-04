@@ -1,0 +1,2 @@
+vhdl work "Pico_ALU.vhd"
+vhdl work "tb2.vhw"

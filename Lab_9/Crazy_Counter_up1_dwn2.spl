@@ -1,0 +1,9 @@
+[Inputs]
+CLK
+RST
+CNT_DIR
+=D[2:0]=
+[Outputs]
+=Q[2:0]=
+=CNT[2:0]=
+[BiDir]

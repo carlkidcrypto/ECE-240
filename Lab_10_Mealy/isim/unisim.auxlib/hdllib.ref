@@ -1,0 +1,11 @@
+AR inv inv_v N:/J.40/rtf/vhdl/src/unisims/unisim_VITAL.vhd arch.3439525,3440024.-1 1194563464
+EN inv NULL N:/J.40/rtf/vhdl/src/unisims/unisim_VITAL.vhd arch.3438982,3439525.-1 1194563463
+EN obuf NULL N:/J.40/rtf/vhdl/src/unisims/unisim_VITAL.vhd arch.4001720,4002679.-1 1194563911
+AR obuf obuf_v N:/J.40/rtf/vhdl/src/unisims/unisim_VITAL.vhd arch.4002679,4003945.-1 1194563912
+EN fdr NULL N:/J.40/rtf/vhdl/src/unisims/unisim_VITAL.vhd arch.3212872,3213646.-1 1194563141
+AR and3 and3_v N:/J.40/rtf/vhdl/src/unisims/unisim_VITAL.vhd arch.2713494,2714051.-1 1194563003
+PH vcomponents NULL N:/J.40/rtf/vhdl/src/unisims/unisim_VCOMP.vhd arch.0,2513613.-1 1194562990
+EN or2 NULL N:/J.40/rtf/vhdl/src/unisims/unisim_VITAL.vhd arch.4573461,4574067.-1 1194564539
+AR fdr fdr_v N:/J.40/rtf/vhdl/src/unisims/unisim_VITAL.vhd arch.3213646,3214920.-1 1194563142
+EN and3 NULL N:/J.40/rtf/vhdl/src/unisims/unisim_VITAL.vhd arch.2712823,2713494.-1 1194563002
+AR or2 or2_v N:/J.40/rtf/vhdl/src/unisims/unisim_VITAL.vhd arch.4574067,4574548.-1 1194564540

@@ -1,0 +1,29 @@
+V3 24
+FL C:/Users/carlo/Desktop/xilinx/Lab_8/Lab_8_crazy_counter_mealy_machine.vf 2019/03/25.20:13:14 J.40
+MO work/Lab_8_crazy_counter_mealy_machine \
+      FL C:/Users/carlo/Desktop/xilinx/Lab_8/Lab_8_crazy_counter_mealy_machine.vf \
+      MI AND2 MI AND3 MI AND4 MI FD MI INV MI OR3 MI OR4 MI OR5
+FL C:/Users/carlo/Desktop/xilinx/Lab_8/netgen/par/Lab_8_crazy_counter_mealy_machine_timesim.v 2019/03/25.20:14:31 J.40
+FL C:/Users/carlo/Desktop/xilinx/Lab_8/TB_01.tfw 2019/03/25.20:18:17 J.40
+FL C:/Users/carlo/Desktop/xilinx/Lab_8/TB_01.vhw 2019/03/25.20:29:36 J.40
+EN work/TB_01 1553570978 FL C:/Users/carlo/Desktop/xilinx/Lab_8/TB_01.vhw \
+      PB ieee/STD_LOGIC_TEXTIO 1194562364 PB ieee/std_logic_1164 1194562354 \
+      PB ieee/std_logic_arith 1194562356 PB ieee/STD_LOGIC_UNSIGNED 1194562362 \
+      PB std/textio 1194562348
+AR work/TB_01/testbench_arch 1553570979 \
+      FL C:/Users/carlo/Desktop/xilinx/Lab_8/TB_01.vhw EN work/TB_01 1553570978 \
+      CP Lab_8_crazy_counter_mealy_machine
+FL C:/Users/carlo/Desktop/xilinx/Lab_8/TB_10000.vhw 2019/03/25.20:37:48 J.40
+EN work/TB_10000 1554352271 FL C:/Users/carlo/Desktop/xilinx/Lab_8/TB_10000.vhw \
+      PB ieee/STD_LOGIC_TEXTIO 1194562364 PB ieee/std_logic_1164 1194562354 \
+      PB ieee/std_logic_arith 1194562356 PB ieee/STD_LOGIC_UNSIGNED 1194562362 \
+      PB std/textio 1194562348
+AR work/TB_10000/testbench_arch 1554352272 \
+      FL C:/Users/carlo/Desktop/xilinx/Lab_8/TB_10000.vhw EN work/TB_10000 1554352271 \
+      CP Lab_8_crazy_counter_mealy_machine
+FL C:/Users/carlo/Desktop/xilinx/Lab_8/TB_Crazy_Counter_1.tfw 2019/03/25.20:16:58 J.40
+MO work/TB_Crazy_Counter_1 \
+      FL C:/Users/carlo/Desktop/xilinx/Lab_8/TB_Crazy_Counter_1.tfw \
+      MI Lab_8_crazy_counter_mealy_machine
+FL $XILINX/verilog/src/glbl.v 2007/05/18.14:22:56 J.40
+MO work/glbl FL $XILINX/verilog/src/glbl.v

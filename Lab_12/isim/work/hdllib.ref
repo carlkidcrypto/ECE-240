@@ -1,0 +1,6 @@
+EN mux2 NULL C:/Users/carlo/Desktop/xilinx/Lab_12/MUX2.vhd sub00/vhpl00 1555983155
+AR mux2 behavioral C:/Users/carlo/Desktop/xilinx/Lab_12/MUX2.vhd sub00/vhpl01 1555983156
+AR alu behavioral C:/Users/carlo/Desktop/xilinx/Lab_12/ALU.vhd sub00/vhpl03 1555983158
+AR tb testbench_arch C:/Users/carlo/Desktop/xilinx/Lab_12/TB.vhw sub00/vhpl05 1555983160
+EN tb NULL C:/Users/carlo/Desktop/xilinx/Lab_12/TB.vhw sub00/vhpl04 1555983159
+EN alu NULL C:/Users/carlo/Desktop/xilinx/Lab_12/ALU.vhd sub00/vhpl02 1555983157

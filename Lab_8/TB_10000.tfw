@@ -1,0 +1,70 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2007 Xilinx, Inc.
+// All Right Reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 9.2.04i
+//  \   \         Application : ISE
+//  /   /         Filename : TB_10000.tfw
+// /___/   /\     Timestamp : Mon Mar 25 20:37:46 2019
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: 
+//Design Name: TB_10000
+//Device: Xilinx
+//
+`timescale 1ns/1ps
+
+module TB_10000;
+    reg A = 1'b0;
+    reg CLK = 1'b0;
+    wire S0N;
+    wire S1N;
+    wire S2N;
+
+    parameter PERIOD = 350;
+    parameter real DUTY_CYCLE = 0.5714285714;
+    parameter OFFSET = 100;
+
+    initial    // Clock process for CLK
+    begin
+        #OFFSET;
+        forever
+        begin
+            CLK = 1'b0;
+            #(PERIOD-(PERIOD*DUTY_CYCLE)) CLK = 1'b1;
+            #(PERIOD*DUTY_CYCLE);
+        end
+    end
+
+    Lab_8_crazy_counter_mealy_machine UUT (
+        .A(A),
+        .CLK(CLK),
+        .S0N(S0N),
+        .S1N(S1N),
+        .S2N(S2N));
+
+    initial begin
+        // -------------  Current Time:  900ns
+        #900;
+        A = 1'b1;
+        // -------------------------------------
+        // -------------  Current Time:  2300ns
+        #1400;
+        A = 1'b0;
+        // -------------------------------------
+        // -------------  Current Time:  3700ns
+        #1400;
+        A = 1'b1;
+        // -------------------------------------
+        // -------------  Current Time:  6150ns
+        #2450;
+        A = 1'b0;
+        // -------------------------------------
+    end
+
+endmodule
+

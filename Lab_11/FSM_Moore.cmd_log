@@ -1,0 +1,3 @@
+xst -ise "C:/Users/carlo/Desktop/xilinx/Lab_11/Lab_11.ise" -intstyle ise -ifn FSM_Moore.xst -ofn FSM_Moore.syr
+xst -ise "C:/Users/carlo/Desktop/xilinx/Lab_11/Lab_11.ise" -intstyle ise -ifn FSM_Moore.xst -ofn FSM_Moore.syr
+xst -ise "C:/Users/carlo/Desktop/xilinx/Lab_11/Lab_11.ise" -intstyle ise -ifn FSM_Moore.xst -ofn FSM_Moore.syr

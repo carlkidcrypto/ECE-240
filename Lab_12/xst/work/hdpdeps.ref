@@ -1,0 +1,16 @@
+V3 9
+FL "//users.uidaho.edu/users/p/port3116/ECE 241/Lab_12/ALU.vhd" 2019/04/16.17:22:26 J.40
+FL "//users.uidaho.edu/users/p/port3116/ECE 241/Lab_12/MUX2.vhd" 2019/04/16.15:47:01 J.40
+FL C:/Users/carlo/Desktop/xilinx/Lab_12/ALU.vhd 2019/04/16.17:24:33 J.40
+EN work/ALU 1555983042 FL C:/Users/carlo/Desktop/xilinx/Lab_12/ALU.vhd \
+      PB ieee/std_logic_1164 1192821031 PB ieee/std_logic_arith 1192821032 \
+      PB ieee/STD_LOGIC_UNSIGNED 1192821033
+AR work/ALU/Behavioral 1555983043 \
+      FL C:/Users/carlo/Desktop/xilinx/Lab_12/ALU.vhd EN work/ALU 1555983042 \
+      CP MUX2
+FL C:/Users/carlo/Desktop/xilinx/Lab_12/MUX2.vhd 2019/04/16.15:47:01 J.40
+EN work/MUX2 1555982987 FL C:/Users/carlo/Desktop/xilinx/Lab_12/MUX2.vhd \
+      PB ieee/std_logic_1164 1192821031 PB ieee/std_logic_arith 1192821032 \
+      PB ieee/STD_LOGIC_UNSIGNED 1192821033
+AR work/MUX2/Behavioral 1555982988 \
+      FL C:/Users/carlo/Desktop/xilinx/Lab_12/MUX2.vhd EN work/MUX2 1555982987

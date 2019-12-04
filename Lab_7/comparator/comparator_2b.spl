@@ -1,0 +1,8 @@
+[Inputs]
+=A[2:0]=
+=B[2:0]=
+[Outputs]
+G
+L
+E
+[BiDir]

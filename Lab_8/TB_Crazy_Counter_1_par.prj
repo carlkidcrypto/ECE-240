@@ -1,0 +1,3 @@
+verilog work "netgen/par/Lab_8_crazy_counter_mealy_machine_timesim.v"
+verilog work "TB_Crazy_Counter_1.tfw"
+verilog work "C:/xilinx/92i/verilog/src/glbl.v"

@@ -1,0 +1,17 @@
+V3 13
+FL C:/Users/carlo/Desktop/xilinx/Lab_10_Mealy/Mealy.vhf 2019/04/08.20:44:18 J.40
+EN work/Mealy 1554781460 FL C:/Users/carlo/Desktop/xilinx/Lab_10_Mealy/Mealy.vhf \
+      PB ieee/std_logic_1164 1194562354 PB ieee/NUMERIC_STD 1194562368 LB UNISIM \
+      PH unisim/VCOMPONENTS 1194562990
+AR work/Mealy/BEHAVIORAL 1554781461 \
+      FL C:/Users/carlo/Desktop/xilinx/Lab_10_Mealy/Mealy.vhf EN work/Mealy 1554781460 \
+      CP FDR CP AND3 CP OR2 CP INV CP OBUF
+FL C:/Users/carlo/Desktop/xilinx/Lab_10_Mealy/TB_4.vhw 2019/04/08.20:48:54 J.40
+EN work/TB_4 1554781737 FL C:/Users/carlo/Desktop/xilinx/Lab_10_Mealy/TB_4.vhw \
+      LB UNISIM PH unisim/VCOMPONENTS 1194562990 PB ieee/std_logic_1164 1194562354 \
+      PB ieee/NUMERIC_STD 1194562368 PB ieee/STD_LOGIC_TEXTIO 1194562364 \
+      PB ieee/std_logic_arith 1194562356 PB ieee/STD_LOGIC_UNSIGNED 1194562362 \
+      PB std/textio 1194562348
+AR work/TB_4/testbench_arch 1554781738 \
+      FL C:/Users/carlo/Desktop/xilinx/Lab_10_Mealy/TB_4.vhw EN work/TB_4 1554781737 \
+      CP Mealy

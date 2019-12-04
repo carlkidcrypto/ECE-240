@@ -1,0 +1,15 @@
+V3 8
+FL C:/Users/carlo/Desktop/xilinx/Lab_7/comparator/comparator_2b.vhd 2019/03/05.16:11:46 J.40
+EN work/comparator_2b 1551831113 \
+      FL C:/Users/carlo/Desktop/xilinx/Lab_7/comparator/comparator_2b.vhd \
+      PB ieee/std_logic_1164 1194562354 PB ieee/std_logic_arith 1194562356 \
+      PB ieee/STD_LOGIC_UNSIGNED 1194562362
+AR work/comparator_2b/Behavioral 1551831114 \
+      FL C:/Users/carlo/Desktop/xilinx/Lab_7/comparator/comparator_2b.vhd \
+      EN work/comparator_2b 1551831113
+FL C:/Users/carlo/Desktop/xilinx/Lab_7/comparator/comparator_2b_tbw.tfw 2019/03/05.15:38:55 J.40
+MO work/comparator_2b_tbw \
+      FL C:/Users/carlo/Desktop/xilinx/Lab_7/comparator/comparator_2b_tbw.tfw \
+      MI comparator_2b
+FL $XILINX/verilog/src/glbl.v 2007/05/18.13:22:56 J.40
+MO work/glbl FL $XILINX/verilog/src/glbl.v

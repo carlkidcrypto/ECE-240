@@ -1,0 +1,3 @@
+MODULE TB_Crazy_Counter
+SUBMODULE Lab_8_crazy_counter_mealy_machine
+INSTANCE UUT

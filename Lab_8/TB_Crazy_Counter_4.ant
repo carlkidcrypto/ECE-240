@@ -1,0 +1,113 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2007 Xilinx, Inc.
+// All Right Reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 9.2.04i
+//  \   \         Application : ISE
+//  /   /         Filename : TB_Crazy_Counter_4.ant
+// /___/   /\     Timestamp : Tue Mar 19 18:22:27 2019
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: 
+//Design Name: TB_Crazy_Counter_4
+//Device: Xilinx
+//
+`timescale 1ns/1ps
+
+module TB_Crazy_Counter_4;
+    reg A = 1'b0;
+    reg CLK = 1'b0;
+    wire S0N;
+    wire S1N;
+    wire S2N;
+
+    parameter PERIOD = 275;
+    parameter real DUTY_CYCLE = 0.6363636364;
+    parameter OFFSET = 100;
+
+    initial    // Clock process for CLK
+    begin
+        #OFFSET;
+        forever
+        begin
+            CLK = 1'b0;
+            #(PERIOD-(PERIOD*DUTY_CYCLE)) CLK = 1'b1;
+            #(PERIOD*DUTY_CYCLE);
+        end
+    end
+
+    Lab_8_crazy_counter_mealy_machine UUT (
+        .A(A),
+        .CLK(CLK),
+        .S0N(S0N),
+        .S1N(S1N),
+        .S2N(S2N));
+
+    integer TX_FILE = 0;
+    integer TX_ERROR = 0;
+    
+    initial begin    // Annotation process for clock CLK
+        #0;
+        ANNOTATE_S0N;
+        ANNOTATE_S1N;
+        ANNOTATE_S2N;
+        #OFFSET;
+        forever begin
+            #115;
+            ANNOTATE_S0N;
+            ANNOTATE_S1N;
+            ANNOTATE_S2N;
+            #160;
+        end
+    end
+
+    initial begin  // Open the annotations file...
+        TX_FILE = $fopen("\\\\users.uidaho.edu\\users\\p\\port3116\\ECE 241\\Lab_8\\TB_Crazy_Counter_4.ano");
+        #2775 // Final time:  2775 ns
+        $display("Success! Annotation Simulation Complete.");
+        $fdisplay(TX_FILE, "Total[%d]", TX_ERROR);
+        $fclose(TX_FILE);
+        $finish;
+    end
+
+    initial begin
+        // -------------  Current Time:  185ns
+        #185;
+        A = 1'b1;
+        // -------------------------------------
+        // -------------  Current Time:  2110ns
+        #1925;
+        A = 1'b0;
+        // -------------------------------------
+    end
+
+    task ANNOTATE_S0N;
+        #0 begin
+            $fdisplay(TX_FILE, "Annotate[%d,S0N,%b]", $time, S0N);
+            $fflush(TX_FILE);
+            TX_ERROR = TX_ERROR + 1;
+        end
+    endtask
+
+    task ANNOTATE_S1N;
+        #0 begin
+            $fdisplay(TX_FILE, "Annotate[%d,S1N,%b]", $time, S1N);
+            $fflush(TX_FILE);
+            TX_ERROR = TX_ERROR + 1;
+        end
+    endtask
+
+    task ANNOTATE_S2N;
+        #0 begin
+            $fdisplay(TX_FILE, "Annotate[%d,S2N,%b]", $time, S2N);
+            $fflush(TX_FILE);
+            TX_ERROR = TX_ERROR + 1;
+        end
+    endtask
+
+endmodule
+

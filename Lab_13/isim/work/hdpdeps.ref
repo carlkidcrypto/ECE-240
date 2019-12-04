@@ -1,0 +1,32 @@
+V3 16
+FL C:/Users/carlo/Desktop/xilinx/Lab_13/Pico_ALU.vhd 2019/04/26.20:17:34 J.40
+EN work/alu 1556335066 FL C:/Users/carlo/Desktop/xilinx/Lab_13/Pico_ALU.vhd \
+      PB ieee/std_logic_1164 1194562354 PB ieee/std_logic_arith 1194562356 \
+      PB ieee/STD_LOGIC_UNSIGNED 1194562362
+AR work/alu/Behavioral 1556335067 \
+      FL C:/Users/carlo/Desktop/xilinx/Lab_13/Pico_ALU.vhd EN work/alu 1556335066
+FL C:/Users/carlo/Desktop/xilinx/Lab_13/TB1.vhw 2019/04/22.20:10:05 J.40
+FL C:/Users/carlo/Desktop/xilinx/Lab_13/tb2.vhw 2019/04/26.19:43:38 J.40
+EN work/tb2 1556333035 FL C:/Users/carlo/Desktop/xilinx/Lab_13/tb2.vhw \
+      PB ieee/std_logic_1164 1194562354 PB ieee/std_logic_arith 1194562356 \
+      PB ieee/STD_LOGIC_UNSIGNED 1194562362 PB ieee/STD_LOGIC_TEXTIO 1194562364 \
+      PB std/textio 1194562348
+AR work/tb2/testbench_arch 1556333036 \
+      FL C:/Users/carlo/Desktop/xilinx/Lab_13/tb2.vhw EN work/tb2 1556333035 \
+      CP alu
+FL C:/Users/carlo/Desktop/xilinx/Lab_13/tb3.vhw 2019/04/26.20:23:47 J.40
+EN work/tb3 1556335431 FL C:/Users/carlo/Desktop/xilinx/Lab_13/tb3.vhw \
+      PB ieee/std_logic_1164 1194562354 PB ieee/std_logic_arith 1194562356 \
+      PB ieee/STD_LOGIC_UNSIGNED 1194562362 PB ieee/STD_LOGIC_TEXTIO 1194562364 \
+      PB std/textio 1194562348
+AR work/tb3/testbench_arch 1556335432 \
+      FL C:/Users/carlo/Desktop/xilinx/Lab_13/tb3.vhw EN work/tb3 1556335431 \
+      CP alu
+FL "U:/ECE 241/Lab_13/Pico_ALU.vhd" 2019/04/23.18:08:22 J.40
+FL "U:/ECE 241/Lab_13/TB1.ant" 2019/04/23.18:05:49 J.40
+FL "U:/ECE 241/Lab_13/TB1.vhw" 2019/04/23.18:05:49 J.40
+EN work/TB1 1556068143 FL "U:/ECE 241/Lab_13/TB1.vhw" PB ieee/std_logic_1164 1194562354 \
+      PB ieee/std_logic_arith 1194562356 PB ieee/STD_LOGIC_UNSIGNED 1194562362 \
+      PB ieee/STD_LOGIC_TEXTIO 1194562364 PB std/textio 1194562348
+AR work/TB1/testbench_arch 1556068144 \
+      FL "U:/ECE 241/Lab_13/TB1.vhw" EN work/TB1 1556068143 CP alu

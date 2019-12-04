@@ -1,0 +1,7 @@
+V3 3
+FL C:/Users/carlo/Desktop/xilinx/Lab_11/LED_Moore.vhd 2019/04/09.15:32:19 J.40
+EN work/FSM_Moore 0 FL C:/Users/carlo/Desktop/xilinx/Lab_11/LED_Moore.vhd \
+      PB ieee/std_logic_1164 1192821031 PB ieee/std_logic_arith 1192821032 \
+      PB ieee/STD_LOGIC_UNSIGNED 1192821033
+AR work/FSM_Moore/Behavioral 0 \
+      FL C:/Users/carlo/Desktop/xilinx/Lab_11/LED_Moore.vhd EN work/FSM_Moore 0

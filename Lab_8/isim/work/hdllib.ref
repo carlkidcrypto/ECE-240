@@ -1,0 +1,8 @@
+AR tb_10000 testbench_arch C:/Users/carlo/Desktop/xilinx/Lab_8/TB_10000.vhw sub00/vhpl03 1554352272
+MO TB_Crazy_Counter_1 NULL C:/Users/carlo/Desktop/xilinx/Lab_8/TB_Crazy_Counter_1.tfw vlg39/_t_b___crazy___counter__1.bin 1553570224
+AR tb_01 testbench_arch C:/Users/carlo/Desktop/xilinx/Lab_8/TB_01.vhw sub00/vhpl01 1553570979
+MO Lab_8_crazy_counter_mealy_machine NULL C:/Users/carlo/Desktop/xilinx/Lab_8/Lab_8_crazy_counter_mealy_machine.vf vlg50/_lab__8__crazy__counter__mealy__machine.bin 1554352270
+MO TB_01 NULL C:/Users/carlo/Desktop/xilinx/Lab_8/TB_01.tfw vlg36/_t_b__01.bin 1553570311
+EN tb_10000 NULL C:/Users/carlo/Desktop/xilinx/Lab_8/TB_10000.vhw sub00/vhpl02 1554352271
+MO glbl NULL C:/xilinx/92i/verilog/src/glbl.v vlg2D/glbl.bin 1553570073
+EN tb_01 NULL C:/Users/carlo/Desktop/xilinx/Lab_8/TB_01.vhw sub00/vhpl00 1553570978

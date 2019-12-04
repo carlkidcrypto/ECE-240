@@ -1,0 +1,23 @@
+V3 10
+FL C:/Users/carlo/Desktop/xilinx/Lab_9/Flip_Flip.vhd 2019/03/25.21:05:09 J.40
+EN work/RST_Flip_Flip 0 FL C:/Users/carlo/Desktop/xilinx/Lab_9/Flip_Flip.vhd \
+      PB ieee/std_logic_1164 1192821031 PB ieee/std_logic_arith 1192821032 \
+      PB ieee/STD_LOGIC_UNSIGNED 1192821033
+AR work/RST_Flip_Flip/Behavioral 0 \
+      FL C:/Users/carlo/Desktop/xilinx/Lab_9/Flip_Flip.vhd EN work/RST_Flip_Flip 0
+FL C:/Users/carlo/Desktop/xilinx/Lab_9/Moore_Crazy_Counter.vhd 2019/03/25.21:28:11 J.40
+EN work/Moore_Crazy_Counter 0 \
+      FL C:/Users/carlo/Desktop/xilinx/Lab_9/Moore_Crazy_Counter.vhd \
+      PB ieee/std_logic_1164 1192821031 PB ieee/std_logic_arith 1192821032 \
+      PB ieee/STD_LOGIC_UNSIGNED 1192821033
+AR work/Moore_Crazy_Counter/Behavioral 0 \
+      FL C:/Users/carlo/Desktop/xilinx/Lab_9/Moore_Crazy_Counter.vhd \
+      EN work/Moore_Crazy_Counter 0 CP RST_Flip_Flip
+FL C:/Users/carlo/Desktop/xilinx/Lab_9/RST_Flip_Flop.vhd 2019/03/25.22:12:34 J.40
+EN work/Crazy_Counter_up1_dwn2 1553577158 \
+      FL C:/Users/carlo/Desktop/xilinx/Lab_9/RST_Flip_Flop.vhd \
+      PB ieee/std_logic_1164 1192821031 PB ieee/std_logic_arith 1192821032 \
+      PB ieee/STD_LOGIC_UNSIGNED 1192821033
+AR work/Crazy_Counter_up1_dwn2/Behavioral 1553577159 \
+      FL C:/Users/carlo/Desktop/xilinx/Lab_9/RST_Flip_Flop.vhd \
+      EN work/Crazy_Counter_up1_dwn2 1553577158

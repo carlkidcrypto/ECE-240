@@ -1,0 +1,39 @@
+ command line:
+   ./tb3_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  51745
+
+Fri Apr 26 20:23:58 2019
+
+Total Line Count : 136
+
+ Elaboration time : 0 sec.
+
+ Estimate current memory usage : 151.314 Meg. 
+
+ Total Signals          : 13
+ Total Nets             : 29
+ Total Signal Drivers   : 7
+ Total Blocks           : 7
+ Total Primitive Blocks : 1
+ Total Processes        : 4
+ Total Traceable Variables  : 0
+ Total Scalar Nets and Variables : 29
+ntrace select -o on -n /tb3/clk 
+ntrace select -o on -n /tb3/rega 
+ntrace select -o on -n /tb3/regb 
+ntrace select -o on -n /tb3/controls 
+ntrace select -o on -n /tb3/alu_out 
+ntrace select -o on -n /tb3/ccr_out 
+ntrace start 
+isimrun 5000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+ Simulation time 0.0625 sec.
+
+ Estimate current memory usage : 164.028 Meg. 
+
+Fri Apr 26 20:24:30 2019
+

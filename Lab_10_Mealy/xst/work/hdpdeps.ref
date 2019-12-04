@@ -1,0 +1,8 @@
+V3 9
+FL C:/Users/carlo/Desktop/xilinx/Lab_10_Mealy/Mealy.vhf 2019/04/08.20:44:18 J.40
+EN work/Mealy 1554781532 FL C:/Users/carlo/Desktop/xilinx/Lab_10_Mealy/Mealy.vhf \
+      PB ieee/std_logic_1164 1192821031 PH ieee/NUMERIC_STD 1192821033 LB UNISIM \
+      PH unisim/VCOMPONENTS 1194566982
+AR work/Mealy/BEHAVIORAL 1554781533 \
+      FL C:/Users/carlo/Desktop/xilinx/Lab_10_Mealy/Mealy.vhf EN work/Mealy 1554781532 \
+      CP FDR CP AND3 CP OR2 CP INV CP OBUF

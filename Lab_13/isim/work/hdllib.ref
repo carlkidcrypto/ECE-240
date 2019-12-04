@@ -1,0 +1,8 @@
+AR tb2 testbench_arch C:/Users/carlo/Desktop/xilinx/Lab_13/tb2.vhw sub00/vhpl05 1556333036
+AR tb1 testbench_arch "U:/ECE 241/Lab_13/TB1.vhw" sub00/vhpl03 1556068144
+AR alu behavioral C:/Users/carlo/Desktop/xilinx/Lab_13/Pico_ALU.vhd sub00/vhpl01 1556335067
+AR tb3 testbench_arch C:/Users/carlo/Desktop/xilinx/Lab_13/tb3.vhw sub00/vhpl07 1556335432
+EN tb1 NULL "U:/ECE 241/Lab_13/TB1.vhw" sub00/vhpl02 1556068143
+EN tb2 NULL C:/Users/carlo/Desktop/xilinx/Lab_13/tb2.vhw sub00/vhpl04 1556333035
+EN tb3 NULL C:/Users/carlo/Desktop/xilinx/Lab_13/tb3.vhw sub00/vhpl06 1556335431
+EN alu NULL C:/Users/carlo/Desktop/xilinx/Lab_13/Pico_ALU.vhd sub00/vhpl00 1556335066

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLParsers" num="3607" delta="unknown" >Unit <arg fmt="%s" index="1">work/ALU</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//users.uidaho.edu/users/p/port3116/ECE 241/Lab_12/ALU.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/carlo/Desktop/xilinx/Lab_12/ALU.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="unknown" >Unit <arg fmt="%s" index="1">work/ALU/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//users.uidaho.edu/users/p/port3116/ECE 241/Lab_12/ALU.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/carlo/Desktop/xilinx/Lab_12/ALU.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="unknown" >Unit <arg fmt="%s" index="1">work/MUX2</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//users.uidaho.edu/users/p/port3116/ECE 241/Lab_12/MUX2.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/carlo/Desktop/xilinx/Lab_12/MUX2.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="unknown" >Unit <arg fmt="%s" index="1">work/MUX2/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//users.uidaho.edu/users/p/port3116/ECE 241/Lab_12/MUX2.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/carlo/Desktop/xilinx/Lab_12/MUX2.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="Xst" num="2734" delta="unknown" >Property &quot;<arg fmt="%s" index="1">use_dsp48</arg>&quot; is not applicable for this technology.
+</msg>
+
+<msg type="warning" file="Xst" num="2734" delta="unknown" >Property &quot;<arg fmt="%s" index="1">use_dsp48</arg>&quot; is not applicable for this technology.
+</msg>
+
+</messages>
+

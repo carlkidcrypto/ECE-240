@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+comparator_1b instance_name (
+    .A_0(A_0), 
+    .B_0(B_0), 
+    .G(G), 
+    .L(L), 
+    .E(E)
+    );
+
+

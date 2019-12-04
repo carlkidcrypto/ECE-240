@@ -1,0 +1,4 @@
+EN mealy NULL C:/Users/carlo/Desktop/xilinx/Lab_10_Mealy/Mealy.vhf sub00/vhpl00 1554781460
+EN tb_4 NULL C:/Users/carlo/Desktop/xilinx/Lab_10_Mealy/TB_4.vhw sub00/vhpl02 1554781737
+AR tb_4 testbench_arch C:/Users/carlo/Desktop/xilinx/Lab_10_Mealy/TB_4.vhw sub00/vhpl03 1554781738
+AR mealy behavioral C:/Users/carlo/Desktop/xilinx/Lab_10_Mealy/Mealy.vhf sub00/vhpl01 1554781461

@@ -1,0 +1,3 @@
+MODULE comparator_2b_tbw
+SUBMODULE comparator_2b
+INSTANCE UUT
